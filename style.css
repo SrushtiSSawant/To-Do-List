@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+.todo-button{
+   background: rgb(103, 181, 201);
+    text-align: center;
+    font-weight: 300;
+    color: black;
+    padding: 12px;
+}
+
+.todo-button:hover{
+    background: rgb(6, 130, 147);
+    color: rgb(255, 254, 254);
+    font-weight: 300;
+}
+
+body {
+    background-image: linear-gradient(rgb(68, 220, 240), rgb(6, 130, 147), rgb(2, 68, 77));
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.main-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke ;   
+    margin: 0 25rem ;
+    border-radius: 39px;
+    font-weight: 500;
+}
+
+form input{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+form button{
+    color: rgb(0, 0, 0);    
+    backface-visibility: 0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;  
+}
+
+form button:hover {
+    color: white;
+    background: rgb(2, 92, 114);
+}
+
+.fa-plus-circle {
+    margin-top: 0.1rem;
+    margin-left: -8px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(48, 48, 48);
+    box-shadow: 10px 10px 5px rgb(1, 20, 26);
+
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.main-container form{
+    background: rgb(48, 48, 48);
+    box-shadow: 10px 10px 5px rgb(1, 20, 26);
+
+}
+
+.main-container img{
+    background: rgb(12, 152, 167);
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    color: rgb(255, 255, 255) ;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.todo-input {
+    background: rgb(87, 86, 86);
+    color: rgb(253, 253, 253);
+    border: 2px;
+    border-radius:1rem;
+    padding: 1rem;
+    font-weight: 500;
+    margin: 1.5rem;
+}
+
+.trash-btn, 
+.complete-btn {
+    background-color: rgb(48, 48, 48);;
+    color: rgb(12, 152, 167);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
